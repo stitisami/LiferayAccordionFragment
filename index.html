@@ -1,0 +1,31 @@
+
+<div class="accordion accordion-mt" id="accordion${fragmentEntryLinkNamespace}">
+[#list 0..configuration.numberOfTabs-1 as i]
+	
+	<div class="card-item ">
+    <div class="card-header" id="heading${i+1}">
+      <h2 class="mb-0">
+        <button class="collapse${i+1} [#if configuration.editTitleMode == false]btn[/#if] btn-link btn-block text-left  d-flex flex-row align-items-center justify-content-between" type="button" data-toggle="collapse" data-target="#collapse${i+1}" aria-expanded="false" aria-controls="collapse${i+1}">
+       <span class="text-header" data-lfr-editable-id="title${i+1}" data-lfr-editable-type="text" data-lfr-priority="${i+1}" >
+						Accordion Item #${i+1}  	
+					</span>   
+										<img class="icon" src='/documents/d/iam-portal/icon-plus'>
+		
+					        </button>
+
+      </h2>
+    </div>
+			<div class="card">
+    <div id="collapse${i+1}" class="collapse " aria-labelledby="heading${i+1}" data-parent="#accordion${fragmentEntryLinkNamespace}">
+      <div class="card-body">
+				<lfr-drop-zone data-lfr-drop-zone-id="${i+1}" data-lfr-priority="${i+1}"></lfr-drop-zone>      </div>
+    </div>
+  </div>
+	</div>
+	
+	[/#list]
+	
+</div>
+				 
+				 
+				
