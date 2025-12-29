@@ -1,0 +1,19 @@
+ .accordion-mt .card-header .btn-link{
+        background: none;
+        border: none;
+    }
+ .accordion-mt .btn-link:active:focus ,
+ .accordion-mt .btn-link:focus
+{
+    box-shadow: none;
+}
+@media screen and (max-width: 768px) {
+.accordion-mt .faq-answer {
+    font-size: 12px;
+	        margin-left: 5px;
+}
+	.accordion-mt  .icon {
+		    width: 25px;
+		height: 30px;
+	}
+}
